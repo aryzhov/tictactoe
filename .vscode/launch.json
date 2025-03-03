@@ -5,11 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "type": "node",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}"
+            "name": "Start React Development Server",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["start"],
+            "console": "integratedTerminal",
+            "serverReadyAction": {
+                "pattern": "Local:.+(https?://\\S+)",
+                "uriFormat": "%s",
+                "action": "debugWithChrome"
+            }
         }
     ]
 }

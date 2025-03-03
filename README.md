@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Tic Tac Toe Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This code was built with Cursor AI.
+
+A simple Tic Tac Toe game built with React. Play against another person by taking turns marking X's and O's on a 3x3 grid. First player to get 3 in a row wins!
 
 ## Available Scripts
 

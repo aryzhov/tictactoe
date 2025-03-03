@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
@@ -35,4 +36,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  width: 310px;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  height: 100px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.game-info {
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.restart-button:hover {
+  background-color: #45a049;
+}
+
+.winner {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 0;
 }

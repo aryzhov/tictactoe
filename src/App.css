@@ -68,7 +68,12 @@
 
 .game-info {
   margin: 20px auto;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .restart-button {
